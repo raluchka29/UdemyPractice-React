@@ -2,6 +2,14 @@ import BookShow from "./BookShow";
 import { useContext } from "react";
 import BookContext from "../context/books";
 
+//hooks file
+// import { useContext } from "react";
+// import BookContext from "../context/books";
+// function useBooksContext() {
+//     return useContext(BookContext);
+// };
+
+
 function BookList() {
     const { books } = useContext(BookContext);
 
