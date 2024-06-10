@@ -15,7 +15,7 @@ function App() {
             <Button secondary outline>Add to wishlist!</Button>
         </div>
         <div>
-            <Button secondary rounded>Hide ads!</Button>
+            <Button primary rounded>Hide ads!</Button>
         </div>
         </div>
 }
