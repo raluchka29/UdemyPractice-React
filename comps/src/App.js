@@ -1,27 +1,25 @@
-import Button from "./components/button";
-import { GoBell, GoCloud, GoDatabase, GoAlert, GoPaperclip} from 'react-icons/go';
+import Accordion from "./components/Accordion";
 
 function App() {
-    const handleClick = () => {
-        console.log('Click!');
-    };
-    return <div>
-        <div>
-            <Button success rounded outline onClick={handleClick} className="mb-5"><GoBell />Click me!</Button>
-        </div>
-        <div>
-            <Button danger outline  onMouseEnter={handleClick} className="mb-5"><GoCloud/>Buy now!</Button>
-        </div>
-        <div>
-            <Button warning  onMouseLeave={handleClick} className="mb-5" ><GoDatabase />See Deal!</Button>
-        </div>
-        <div>
-            <Button secondary outline className="mb-5"><GoPaperclip />Add to wishlist!</Button>
-        </div>
-        <div>
-            <Button primary rounded className="mb-5"><GoAlert />Hide ads!</Button>
-        </div>
-        </div>
+const items = [
+    {
+        id: 'bhdbcf',
+        label: 'Can I use React on a project?',
+        content: 'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. '
+    },
+    {
+        id: 'bhnkjnijub',
+        label: 'Can I use Javascript on a project?',
+        content: 'You can use Javascript on any project you want. You can use Javascript on any project you want. You can use Javascript on any project you want. '
+    },
+    {
+        id: 'uhihjuin',
+        label: 'Can I use CSS on a project?',
+        content: 'You can use CSS on any project you want. You can use CSS on any project you want. You can use CSS on any project you want. '
+    }
+]
+
+   return <Accordion items={items} />
 }
 
 export default App;
