@@ -5,10 +5,10 @@ import CarSearch from './components/CarSearch';
 
 function App() {
     return (
-    <div>
+    <div className='container is-flui'>
         <CarForm />
-        <CarList />
         <CarSearch />
+        <CarList />        
         <CarValue />
     </div>);
 }
